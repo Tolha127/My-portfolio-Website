@@ -1,0 +1,187 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    padding-top: 60px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #222;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* Header */
+header {
+    background-color: #00bcd4;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about h1 {
+    margin-top: 20px;
+    font-size: 28px;
+    color: #444;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+.my-image {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+/* Skills Section */
+#skills {
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.gallery-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 150px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.caption {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Projects Section */
+#projects {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.project-item {
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: #fafafa;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.project-item h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #00bcd4;
+}
+
+.project-item p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        margin: 20px auto;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    header,
+    #about,
+    #skills,
+    #projects {
+        padding: 40px 10px;
+    }
+
+    .project-item ul {
+        padding-left: 20px;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
